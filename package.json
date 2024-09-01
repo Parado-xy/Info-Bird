@@ -1,0 +1,23 @@
+{
+  "name": "bird-recognizer",
+  "version": "1.0.0",
+  "description": "A bird recognizer application made by a novist developer",
+  "main": "bird.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon bird.js"
+  },
+  "author": "Parado-xy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-fileupload": "^1.5.1",
+    "express-session": "^1.18.0",
+    "flash": "^1.1.0",
+    "jimp": "^0.22.12",
+    "mongoose": "^8.6.0",
+    "nodemon": "^3.1.4"
+  }
+}
