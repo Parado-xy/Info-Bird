@@ -35,6 +35,11 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 app.use(fileUpload());
 
+// Attach and use the logger middleware
+const logger = require('./lib/logger')
+
+app.use(logger)
+
 // Set up port.
 
 port = process.env.PORT || 3000
