@@ -32,9 +32,6 @@ main {
     padding: 20px;
 }
 
-.upload-container {
-    margin: 20px 0;
-}
 
 input[type="file"] {
     padding: 10px;
@@ -83,4 +80,18 @@ footer {
 }
 .custom-file-label:hover {
     background-color: #45a049;
+}
+
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    min-height: 200px; /* Ensures there's enough space to center */
+}
+
+#loading {
+    margin: 20px 0; /* Add some margin */
+    display: none; /* Initially hide the loading symbol */
 }

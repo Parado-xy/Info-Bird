@@ -14,14 +14,25 @@
 
     <main>
         <div class="upload-container">
-            <form action = '/upload/bird' enctype="multipart/form-data" method="post">
-                    <input type="file" id="imageUpload" accept="image/*" name = 'image'  >
+            <form action = 'http://127.0.0.1:5000/predict' enctype="multipart/form-data" method="post" id = 'imageForm'>
+                    <input type="file" id="imageUpload" accept="image/*" name = 'image' required >
                     <button id="uploadBtn">Upload and Identify</button> 
             </form>
 
-        </div>
-        <div id="result">
-            <p>No image uploaded yet.</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" id = 'loading'>
+                <circle cx="50" cy="50" r="35" stroke-width="10" stroke="#45a049" fill="none" stroke-linecap="round" stroke-dasharray="164.93361431346415 56.97787143782138">
+                  <animateTransform
+                    attributeName="transform"
+                    type="rotate"
+                    repeatCount="indefinite"
+                    dur="1s"
+                    keyTimes="0;1"
+                    values="0 50 50;360 50 50"
+                  />
+                </circle>
+              </svg>
+              
+
         </div>
     </main>
 
